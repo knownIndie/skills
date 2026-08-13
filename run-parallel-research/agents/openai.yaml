@@ -1,0 +1,4 @@
+interface:
+  display_name: "Cost-Aware Parallel Research"
+  short_description: "Use cheap scouts and one strong synthesis pass"
+  default_prompt: "Use $run-parallel-research to investigate this topic with low-cost research scouts, then synthesize the compact evidence once with a strong model."

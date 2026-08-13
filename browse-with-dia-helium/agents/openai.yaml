@@ -1,0 +1,6 @@
+interface:
+  display_name: "Browse with Dia and Helium"
+  short_description: "Automatically choose the right browser"
+  default_prompt: "Use $browse-with-dia-helium to choose the right browser and complete this web task."
+policy:
+  allow_implicit_invocation: true

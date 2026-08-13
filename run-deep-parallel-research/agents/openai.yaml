@@ -1,0 +1,6 @@
+interface:
+  display_name: "Deep Parallel Research"
+  short_description: "Quality-first multi-agent research and synthesis"
+  default_prompt: "Use $run-deep-parallel-research to investigate this topic comprehensively with parallel agents and synthesize the verified evidence."
+policy:
+  allow_implicit_invocation: false
