@@ -7,8 +7,7 @@ Personal Codex skills maintained by Ana.
 - `browse-with-dia-helium`: routes visible browser work to Dia or Helium.
 - `run-parallel-research`: coordinates cost-aware parallel research.
 - `run-deep-parallel-research`: coordinates quality-first deep parallel research.
-- `html-communication`: creates and validates standalone HTML communication documents.
-- `create-effective-html`: creates interactive HTML artifacts when a visual format improves understanding.
+- `html-doc`: creates and validates focused standalone HTML documents.
 
 Each skill directory contains its `SKILL.md`, agent metadata, and any scripts the skill needs.
 

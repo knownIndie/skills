@@ -1,9 +1,9 @@
 ---
-name: html-communication
+name: html-doc
 description: Create and verify a standalone, self-contained HTML communication document for a human to read outside the terminal and outside the user's product codebase. Use when the user asks for an HTML plan, specification, write-up, report, findings document, summary, comparison, review, explainer, decision document, status document, implementation handoff, or collection of static UI mocks, especially when they expect a saved HTML file and a link to open it. Do not use for implementing websites, product interfaces, application pages, repository-owned HTML, email HTML, HTML snippets, or components intended to ship with a codebase.
 ---
 
-# HTML Communication
+# HTML Doc
 
 Create one focused HTML document that makes work easy to understand. Treat HTML as a communication format, not a product or landing page.
 

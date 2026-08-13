@@ -1,0 +1,4 @@
+interface:
+  display_name: "HTML Doc"
+  short_description: "Create clear standalone HTML documents"
+  default_prompt: "Use $html-doc to turn this work into a focused standalone HTML document."

@@ -1,4 +1,0 @@
-interface:
-  display_name: "HTML Doc"
-  short_description: "Create focused, readable HTML documents"
-  default_prompt: "Use $create-effective-html to turn this material into a focused, self-contained HTML document."
