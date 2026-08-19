@@ -8,8 +8,9 @@ Personal Codex skills maintained by Ana.
 - `run-parallel-research`: coordinates cost-aware parallel research.
 - `run-deep-parallel-research`: coordinates quality-first deep parallel research.
 - `html-doc`: creates and validates focused standalone HTML documents.
+- `unslop`: removes obvious AI writing patterns and adds a more human voice.
 
-Each skill directory contains its `SKILL.md`, agent metadata, and any scripts the skill needs.
+Each skill directory contains its `SKILL.md` and any metadata or scripts the skill needs.
 
 ## Install a skill
 
