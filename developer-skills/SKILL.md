@@ -34,6 +34,7 @@ use this file as the current compiled state. Do not rescan GitHub first.
 8. For job fit, distinguish "can build with this" from "has production-depth evidence".
 9. Keep normal retrieval to this one file. `REPOSITORY_ANALYSIS.md` is evidence for refreshes only.
 10. Git history is the long-term change log.
+11. Repositories outside the tracked set must not contribute evidence, capability claims, or refresh decisions.
 
 # Current snapshot
 
@@ -183,7 +184,7 @@ Can own language-heavy infrastructure or libraries, diagnose hard compiler/runti
 
 Current language assignments:
 
-- TypeScript: Level 3 completed. Evidence includes full-stack Next.js applications, Turborepo real-time app, typed CLI/tooling, database layers and reusable interfaces.
+- TypeScript: Level 3 completed. Evidence includes full-stack Next.js applications, typed CLI/tooling, database layers and reusable interfaces.
 - JavaScript: Level 3 completed. Strongest evidence is the non-trivial Manifest V3 `VoidYoutube` extension with background/content scripts, DOM injection, storage aggregation and analytics UI.
 - Python: Level 1 completed. DSA use is established, but larger Python application/test/module ownership is not.
 - Swift / SwiftUI: historical Level 0-type exposure through archived `WeSplit`, not current proficiency.
@@ -247,7 +248,6 @@ Current: Level 2 completed. Level 3 developing.
 Level 3 evidence already present:
 
 - Redis rate limiting in FOODIO
-- Socket.IO + Redis pub/sub in RealtimeChat
 - liveness/readiness and environment validation in OpsLab
 
 Level 3 blockers:
@@ -427,7 +427,7 @@ Can compare multiple viable designs quantitatively and evolve a system as requir
 
 Can own architecture using real production constraints, incidents and operational data.
 
-Current: foundations developing. RealtimeChat, FOODIO and OpsLab provide useful components, but there is not enough repeated end-to-end design evidence to mark Level 1 completed yet.
+Current: foundations developing. FOODIO and OpsLab provide useful components, but there is not enough repeated end-to-end design evidence to mark Level 1 completed yet.
 
 # Current evidence map
 
@@ -436,14 +436,13 @@ Primary repositories for normal reasoning about ability:
 - `FOODIO`: strongest current full-stack/backend/database evidence
 - `devscreen`: current full-stack, auth, DB and AI-app evidence
 - `kontxt-cli`: strongest CLI/developer-tooling TypeScript evidence
-- `RealtimeChat`: real-time backend, Redis pub/sub and monorepo evidence
 - `VoidYoutube`: strongest JavaScript/browser-extension evidence
 - `opslab-next`: strongest current CI/health/readiness/operations evidence
 - `project-monitor`: automation/testing/tooling evidence
 - `Python-DSA` and `neetcode-submissions`: DSA evidence
 - `luma` and `portfolio`: supporting Next.js/TypeScript evidence
 
-The complete 50-repository classification lives in `developer-skills/REPOSITORY_ANALYSIS.md`. Do not read it during ordinary requests.
+The complete tracked-repository classification lives in `developer-skills/REPOSITORY_ANALYSIS.md`. Do not read it during ordinary requests.
 
 # Current learning priorities
 
@@ -480,7 +479,7 @@ A refresh has two phases.
 ## Automatic evidence pass
 
 1. Read this file.
-2. Find repositories with meaningful activity since `Last full repository scan` or the previous weekly refresh.
+2. Find tracked repositories with meaningful activity since `Last full repository scan` or the previous weekly refresh.
 3. Inspect only changed/high-signal files and commits.
 4. Check whether new evidence satisfies a specific incomplete gate.
 5. Update this file only for meaningful capability changes.
@@ -505,4 +504,4 @@ Record answers as evidence for gates. Do not convert them into arbitrary confide
 
 A normal request should cost one GitHub file read.
 
-Only a refresh/update may fan out across repositories. After the refresh, compile the result back into this file so future conversations return to the one-read path.
+Only a refresh/update may fan out across tracked repositories. After the refresh, compile the result back into this file so future conversations return to the one-read path.
