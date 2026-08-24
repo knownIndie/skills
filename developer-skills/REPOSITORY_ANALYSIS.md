@@ -2,7 +2,7 @@
 
 Last full scan: 2026-08-24
 
-Purpose: record what each owned repository contributes to the developer-skill profile. This is evidence, not the normal read path. Normal conversations should read only `developer-skills/SKILL.md`.
+Purpose: record what each tracked repository contributes to the developer-skill profile. This is evidence, not the normal read path. Normal conversations should read only `developer-skills/SKILL.md`.
 
 ## Evidence rules
 
@@ -12,6 +12,7 @@ Purpose: record what each owned repository contributes to the developer-skill pr
 - Future plans do not count as completed work.
 - Private repositories that cannot be safely or reliably inspected stay unverified instead of being guessed.
 - DSA submissions prove attempted/implemented patterns. Independent pattern recognition must be verified separately.
+- Repositories outside the tracked set must not contribute evidence or capability claims.
 
 ## High-signal repositories
 
@@ -20,7 +21,6 @@ Purpose: record what each owned repository contributes to the developer-skill pr
 | `FOODIO` | high | Next.js, React, TypeScript, PostgreSQL, Drizzle, auth, Redis, rate limiting, validation, local service tooling, migrations | Does not by itself prove production observability, jobs, idempotency, query-plan work, or large-scale ownership |
 | `devscreen` | high | Next.js, TypeScript, Better Auth, Neon/Postgres, Drizzle/Kysely, AI SDK exposure, forms, product architecture | Earlier project audit showed substantial product work still incomplete; dependencies do not prove completed AI flows |
 | `kontxt-cli` | high | Published TypeScript CLI, codebase traversal/filtering, packaging, token tooling, build pipeline, Bun tests | Cross-platform hardening and extensibility architecture are not yet strongly verified |
-| `RealtimeChat` | high | Next.js + Node.js split, TypeScript, Socket.IO, Redis pub/sub, Turborepo, frontend/backend deployment | Real-time architecture exists, but production resilience and failure handling are not deeply verified |
 | `VoidYoutube` | high | Manifest V3 browser extension, service worker/background logic, content scripts, SPA lifecycle handling, DOM injection, Chrome storage aggregation, analytics UI | Known multi-tab race condition shows concurrency/state coordination is still an active weakness |
 | `opslab-next` | high | Typed environment validation, liveness/readiness checks, PostgreSQL/Drizzle, tests, CI quality gates, operational failure exercises | No verified container/image lifecycle yet |
 | `project-monitor` | high | Automation/tooling repo with GitHub workflow structure, tests, scripts, project data and deployment config | Small system; does not prove large service architecture |
@@ -91,18 +91,17 @@ Purpose: record what each owned repository contributes to the developer-skill pr
 - Node.js backend development
 - API and authentication work
 - PostgreSQL integration through Drizzle/Prisma/Neon
-- Redis exposure across rate limiting and pub/sub
+- Redis exposure through rate limiting
 - Developer tooling and CLI work
 - Browser extension development
 - Basic CI, health checks and environment validation
 
 ### Developing areas with real evidence
 
-- Real-time systems through Socket.IO + Redis pub/sub
 - Operational engineering through CI, liveness/readiness and failure exercises
 - Testing through CLI tests, OpsLab quality gates and project-monitor tests
 - AI application development through AI SDK usage in DevScreen, without enough completed end-to-end evidence for a higher gate
-- System design reasoning through multi-app architecture, monorepos, Redis and service separation, but without enough production-scale evidence for a completed system-design gate
+- System design reasoning through application architecture, Redis and service boundaries, but without enough production-scale evidence for a completed system-design gate
 
 ### Do not claim yet
 
@@ -123,4 +122,4 @@ Older repositories sometimes commit `.DS_Store` and, in a few cases, `node_modul
 
 ## Scan coverage
 
-All 50 owned repositories visible to the connected GitHub account were classified in this audit. Public repositories were inspected at the root and high-signal repositories received deeper reads. Private repositories were inspected only through safe documentation/manifests where available. Environment/secret-oriented repositories were not opened for content analysis.
+The tracked repository set visible to the connected GitHub account was classified in this audit. Public repositories were inspected at the root and high-signal repositories received deeper reads. Private repositories were inspected only through safe documentation/manifests where available. Environment/secret-oriented repositories were not opened for content analysis.
