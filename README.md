@@ -9,6 +9,8 @@ Personal Codex skills maintained by Ana.
 - `run-deep-parallel-research`: coordinates quality-first deep parallel research.
 - `html-doc`: creates and validates focused standalone HTML documents.
 - `unslop`: removes obvious AI writing patterns and adds a more human voice.
+- `gh-detailed-commit`: inspects, validates, commits, and pushes a scoped change with a detailed message.
+- `gh-detailed-pr`: commits and pushes a scoped change, then opens a detailed GitHub pull request.
 
 Each skill directory contains its `SKILL.md` and any metadata or scripts the skill needs.
 

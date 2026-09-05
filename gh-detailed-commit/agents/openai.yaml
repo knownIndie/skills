@@ -1,0 +1,4 @@
+interface:
+  display_name: "GH Detailed Commit"
+  short_description: "Create detailed, reviewable Git commit messages"
+  default_prompt: "Use $gh-detailed-commit to review, commit, and push my current changes with a detailed message."

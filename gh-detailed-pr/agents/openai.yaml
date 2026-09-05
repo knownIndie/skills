@@ -1,0 +1,4 @@
+interface:
+  display_name: "GH Detailed PR"
+  short_description: "Commit, push, and open a documented GitHub PR"
+  default_prompt: "Use $gh-detailed-pr to inspect this work, commit and push it, then open a detailed pull request."
