@@ -8,6 +8,7 @@ Personal Codex skills maintained by Ana.
 - `run-parallel-research`: coordinates cost-aware parallel research.
 - `run-deep-parallel-research`: coordinates quality-first deep parallel research.
 - `html-doc`: creates and validates focused standalone HTML documents.
+- `better-html-doc`: creates standalone documents with the approved right outline and reading controls.
 - `unslop`: removes obvious AI writing patterns and adds a more human voice.
 - `gh-detailed-commit`: inspects, validates, commits, and pushes a scoped change with a detailed message.
 - `gh-detailed-pr`: commits and pushes a scoped change, then opens a detailed GitHub pull request.

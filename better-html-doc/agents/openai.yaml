@@ -1,0 +1,4 @@
+interface:
+  display_name: "Better HTML Doc"
+  short_description: "Standalone documents with a compact reading menu"
+  default_prompt: "Use $better-html-doc to create a standalone HTML document with the approved reader layout and controls."
